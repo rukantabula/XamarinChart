@@ -15,7 +15,7 @@
 
     <Label x:Name="MainLabel"
            Text="{Binding Value, Source={x:Reference MainSlider}} "
-           FontSize="60"
+           FontSize="20"
            />
 
     <DatePicker x:Name="MainDatePicker"
@@ -28,8 +28,23 @@
     <Label x:Name="MainLabel2"
            Text="{Binding Date, Source={x:Reference MainDatePicker}}"
           HorizontalOptions="Center"
-          FontSize="30"
+          FontSize="10"
            TextColor="White"/>
+
+    
+         <Label  Text="Switch"
+         HorizontalOptions="Center"
+         FontSize="20"
+          TextColor="White"/>
+
+    <Switch x:Name="MainSwitch" 
+            HorizontalOptions="Center"/>
+
+    <Label x:Name="MainLabel3"
+          Text="{Binding IsToggled, Source={x:Reference MainSwitch}}"
+         HorizontalOptions="Center"
+         FontSize="40"
+          TextColor="Fuchsia"/>
     
       
   </StackLayout>
