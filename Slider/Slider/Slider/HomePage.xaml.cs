@@ -13,7 +13,19 @@ namespace Slider
         public HomePage()
         {
             InitializeComponent();
+
+   
+
         }
+
+        protected override async void OnAppearing()
+        {
+            base.OnAppearing();
+       
+            await MainProgressBar.ProgressTo(1, 11900, Easing.Linear);
+
+            }
+
 
         //private void MainSlider_OnValueChanged(Object sender , ValueChangedEventArgs e)
         //{
@@ -24,6 +36,10 @@ namespace Slider
         //{
         //    MainLabel.Text = e.NewDate.ToString();
         //}
+
+        
+
+
 
     }
 }

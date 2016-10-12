@@ -45,7 +45,27 @@
          HorizontalOptions="Center"
          FontSize="40"
           TextColor="Fuchsia"/>
-    
+
+
+    <Grid>
+      <Label Text="ProgressBar" 
+             FontSize="25"
+             HorizontalOptions="Center"
+             TextColor="Black"/>
+      <ProgressBar x:Name="MainProgressBar"
+                   Progress="0"
+                   WidthRequest="300"
+                    VerticalOptions="Center"
+                   HorizontalOptions="Center"/>
+                   
+
+      <Label x:Name="Mainlabel4"
+             Text=""
+             FontSize="25"
+             HorizontalOptions="Center"
+             TextColor="Blue"/>
+      
+    </Grid>
       
   </StackLayout>
 </ContentPage>
