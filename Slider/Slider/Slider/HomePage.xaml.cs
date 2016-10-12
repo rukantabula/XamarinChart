@@ -26,6 +26,13 @@ namespace Slider
 
             }
 
+        private void MenuItem_OnClicked (object sender, EventArgs e)
+        {
+            MainLabel5.Text = "Item Clikced!";
+
+
+        }
+        
 
         //private void MainSlider_OnValueChanged(Object sender , ValueChangedEventArgs e)
         //{
@@ -37,7 +44,7 @@ namespace Slider
         //    MainLabel.Text = e.NewDate.ToString();
         //}
 
-        
+
 
 
 
