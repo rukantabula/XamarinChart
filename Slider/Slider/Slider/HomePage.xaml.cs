@@ -15,10 +15,15 @@ namespace Slider
             InitializeComponent();
         }
 
-        private void MainSlider_OnValueChanged(Object sender
-            , ValueChangedEventArgs e)
-        {
-            MainLabel.Text = MainSlider.Value.ToString();
-        }
+        //private void MainSlider_OnValueChanged(Object sender , ValueChangedEventArgs e)
+        //{
+        //    MainLabel.Text = MainSlider.Value.ToString();
+        //}
+
+        //private void DatePicker_OnDateSelected(Object sender, DateChangedEventArgs e)
+        //{
+        //    MainLabel.Text = e.NewDate.ToString();
+        //}
+
     }
 }
